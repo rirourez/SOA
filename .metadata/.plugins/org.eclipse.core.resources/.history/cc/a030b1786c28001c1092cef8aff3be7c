@@ -1,0 +1,5 @@
+package com.ryadh.voitures.entities;
+
+public class Voiture {
+
+}

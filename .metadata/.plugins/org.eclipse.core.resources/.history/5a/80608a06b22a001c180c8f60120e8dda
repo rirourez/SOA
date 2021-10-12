@@ -1,0 +1,5 @@
+package com.ryadh.voitures.services;
+
+public class VoitureServiceImpl {
+
+}

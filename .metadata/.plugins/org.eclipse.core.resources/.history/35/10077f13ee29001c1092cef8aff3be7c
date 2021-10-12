@@ -1,0 +1,28 @@
+package com.ryadh.voitures;
+
+import java.util.Date;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.ryadh.voitures.entities.Voiture;
+import com.ryadh.voitures.repos.VoitureRepository;
+
+@SpringBootTest
+class VoituresApplicationTests {
+
+	
+@SpringBootTest
+class ProduitsApplicationTests {
+
+	@Autowired
+	private VoitureRepository voitureRepository;
+	
+	@Test
+	public void testCreateVoiture() {
+	Voiture v = new Voiture("Ford","Fiesta", 2200.500,new Date());
+	voitureRepository.save(v);
+	}
+}
+}
